@@ -1,0 +1,281 @@
+/* =========================
+   PURCHASE PAGES
+========================= */
+
+
+.add-purchase{
+
+    max-width:750px;
+    margin:auto;
+
+}
+
+
+
+.add-purchase h2{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.form-group label{
+
+    display:block;
+    margin-bottom:8px;
+    color:#e5e7eb;
+
+}
+
+
+
+.form-group input,
+.form-group textarea{
+
+
+    width:100%;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:15px;
+
+    outline:none;
+
+    font-family:Vazirmatn,sans-serif;
+
+}
+
+
+
+.form-group textarea{
+
+    min-height:120px;
+
+    resize:none;
+
+}
+
+
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:rgba(255,255,255,.35);
+
+}
+
+
+
+.save-btn{
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+
+.save-btn:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+
+
+
+
+
+/* =========================
+   LIST PAGE
+========================= */
+
+
+.purchase-list{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+
+
+.purchase-card{
+
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:20px;
+
+    padding:20px;
+
+}
+
+
+
+.purchase-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.purchase-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+
+
+.purchase-info div{
+
+
+    background:rgba(255,255,255,.05);
+
+    padding:12px;
+
+    border-radius:12px;
+
+
+}
+
+
+
+.purchase-card span{
+
+    opacity:.7;
+
+    font-size:14px;
+
+}
+
+
+
+.purchase-actions{
+
+    margin-top:18px;
+
+}
+
+
+
+.delete-btn{
+
+
+    padding:8px 18px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#ff8b8b;
+
+    background:rgba(255,0,0,.12);
+
+    border:1px solid rgba(255,0,0,.2);
+
+}
+
+.add-btn{
+
+    border:none;
+    cursor:pointer;
+
+    padding:12px 22px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-family:Vazirmatn,sans-serif;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+
+}
+
+
+.add-btn:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+.search-box{
+
+    margin:25px 0;
+    
+    }
+    
+    
+    .search-box input{
+    
+    
+    width:100%;
+    
+    padding:15px 20px;
+    
+    border-radius:18px;
+    
+    background:rgba(255,255,255,.06);
+    
+    border:1px solid rgba(255,255,255,.12);
+    
+    color:white;
+    
+    outline:none;
+    
+    font-family:Vazirmatn,sans-serif;
+    
+    
+    }
+    
+    
+    .search-box input::placeholder{
+    
+    color:rgba(255,255,255,.5);
+    
+    }

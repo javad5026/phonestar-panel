@@ -1,0 +1,516 @@
+/* =========================
+   INVOICE ADD
+========================= */
+
+
+.invoice-box{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+
+
+.invoice-box h2{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.form-group label{
+
+    display:block;
+    margin-bottom:8px;
+
+}
+
+
+
+.form-group input,
+.invoice-row input{
+
+
+    width:100%;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:15px;
+
+    outline:none;
+
+    font-family:Vazirmatn,sans-serif;
+
+}
+
+
+
+.form-group input:focus,
+.invoice-row input:focus{
+
+    border-color:rgba(255,255,255,.35);
+
+}
+
+
+
+/* =========================
+   ITEMS
+========================= */
+
+
+#items{
+
+    margin-top:25px;
+
+}
+
+
+
+.invoice-row{
+
+    display:grid;
+
+    grid-template-columns:2fr .7fr 1fr 1.2fr 45px;
+
+    gap:12px;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.remove-item{
+
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:rgba(255,0,0,.15);
+
+    color:#ff8585;
+
+    font-size:24px;
+
+}
+
+
+
+.add-btn{
+
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:12px 22px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-family:Vazirmatn,sans-serif;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+
+}
+
+
+
+.add-btn:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+
+
+.save-btn{
+
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+.save-btn:hover{
+
+    background:rgba(255,255,255,.25);
+
+}
+
+
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:rgba(255,255,255,.1);
+
+    margin:25px 0;
+
+}
+
+
+
+/* =========================
+   INVOICE LIST
+========================= */
+
+
+.invoice-list{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+
+
+.invoice-card{
+
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    padding:20px;
+
+    border-radius:20px;
+
+}
+
+
+
+.invoice-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.invoice-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+
+
+.invoice-info div{
+
+    background:rgba(255,255,255,.05);
+
+    padding:12px;
+
+    border-radius:14px;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.invoice-row{
+
+grid-template-columns:1fr;
+
+}
+
+
+.invoice-info{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+
+.search-box{
+
+    margin:25px 0;
+    
+    }
+    
+    
+    .search-box input{
+    
+    
+    width:100%;
+    
+    padding:15px 20px;
+    
+    border-radius:18px;
+    
+    background:rgba(255,255,255,.06);
+    
+    border:1px solid rgba(255,255,255,.12);
+    
+    color:white;
+    
+    outline:none;
+    
+    font-family:Vazirmatn,sans-serif;
+    
+    }
+    
+    
+    
+    
+    .detail-btn{
+    
+    
+    margin-top:20px;
+    
+    padding:10px 25px;
+    
+    border:none;
+    
+    border-radius:14px;
+    
+    cursor:pointer;
+    
+    background:rgba(255,255,255,.12);
+    
+    color:white;
+    
+    border:1px solid rgba(255,255,255,.15);
+    
+    font-family:Vazirmatn,sans-serif;
+    
+    transition:.3s;
+    
+    
+    }
+    
+    
+    .detail-btn:hover{
+    
+    
+    background:rgba(255,255,255,.25);
+    
+    
+    }
+    
+    
+    
+    
+    .invoice-modal{
+    
+    
+    display:none;
+    
+    position:fixed;
+    
+    inset:0;
+    
+    background:rgba(0,0,0,.55);
+    
+    backdrop-filter:blur(8px);
+    
+    align-items:center;
+    
+    justify-content:center;
+    
+    z-index:999;
+    
+    
+    }
+    
+    
+    
+    .modal-box{
+    
+    
+    width:90%;
+    
+    max-width:650px;
+    
+    background:rgba(20,25,40,.85);
+    
+    border:1px solid rgba(255,255,255,.15);
+    
+    border-radius:25px;
+    
+    padding:25px;
+    
+    position:relative;
+    
+    }
+    
+    
+    
+    .close-modal{
+    
+    
+    position:absolute;
+    
+    left:20px;
+    
+    top:15px;
+    
+    width:35px;
+    
+    height:35px;
+    
+    border:none;
+    
+    border-radius:50%;
+    
+    background:rgba(255,0,0,.2);
+    
+    color:white;
+    
+    font-size:22px;
+    
+    cursor:pointer;
+    
+    
+    }
+
+    .invoice-header{
+
+        display:flex;
+        
+        justify-content:space-between;
+        
+        align-items:center;
+        
+        margin-bottom:15px;
+        
+        }
+        
+        
+        
+        .invoice-line{
+        
+        
+        display:flex;
+        
+        gap:25px;
+        
+        background:rgba(255,255,255,.05);
+        
+        padding:14px;
+        
+        border-radius:15px;
+        
+        font-size:14px;
+        
+        
+        }
+        
+        
+        @media(max-width:700px){
+        
+        .invoice-line{
+        
+        flex-direction:column;
+        
+        gap:8px;
+        
+        }
+        
+        }
+
+        .invoice-actions{
+
+
+            display:flex;
+            
+            gap:15px;
+            
+            margin-top:25px;
+            
+            }
+            
+            
+            
+            .print-btn{
+            
+            
+            padding:12px 22px;
+            
+            border-radius:15px;
+            
+            border:1px solid rgba(255,255,255,.15);
+            
+            background:rgba(255,255,255,.12);
+            
+            color:white;
+            
+            cursor:pointer;
+            
+            text-decoration:none;
+            
+            font-family:Vazirmatn,sans-serif;
+            
+            
+            }
+            
+            
+            
+            .print-btn:hover{
+            
+            
+            background:rgba(255,255,255,.25);
+            
+            
+            }
